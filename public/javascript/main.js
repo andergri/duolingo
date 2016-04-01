@@ -1,6 +1,6 @@
 $( "form" ).submit(function( event ) {
     
-  if ( $( "input:first" ).val() === $( "input:second" ).val() ) {
+  if ( $( "input:first" ).val().equals( $( "input:second" ).val() )) {
     $( "span" ).text( "Valid Anagrams" ).show().fadeOut( 3000 );
     return;
   }
