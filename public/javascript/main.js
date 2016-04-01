@@ -1,4 +1,7 @@
 $( "form" ).submit(function( event ) {
+
+    alert( 'success!' );
+    
   if ( $( "input:first" ).val() === "correct" ) {
     $( "span" ).text( "Validated..." ).show();
     return;
