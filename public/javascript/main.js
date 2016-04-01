@@ -1,6 +1,6 @@
 $( "form" ).submit(function( event ) {
 
-    alert( 'success!' );
+    alert( 'succeseees  ads!' );
     
   if ( $( "input:first" ).val() === "correct" ) {
     $( "span" ).text( "Validated..." ).show();
