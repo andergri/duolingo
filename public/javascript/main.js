@@ -1,12 +1,10 @@
 $( "form" ).submit(function( event ) {
-
-    alert( 'succeseees  ads!' );
     
-  if ( $( "input:first" ).val() === "correct" ) {
-    $( "span" ).text( "Validated..." ).show();
+  if ( $( "input:first" ).val() === $( "input:second" ).val() ) {
+    $( "span" ).text( "Valid Anagrams" ).show().fadeOut( 3000 );
     return;
   }
  
-  $( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
+  $( "span" ).text( "Not valid!" ).show().fadeOut( 3000 );
   event.preventDefault();
 });
