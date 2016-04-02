@@ -2,9 +2,13 @@ $( "form" ).submit(function( event ) {
     
   event.preventDefault();
 
-  getSortedString( $( "#first_string" ).val() );    
+  var firstString = $( "#first_string" ).val().split().sort().join();
+  var secondString = $( "#second_string" ).val().split().sort().join();      
     
-  if ( $( "#first_string" ).val() === $( "#second_string" ).val() ) {
+  alert(firstString);
+  alert(secondString);    
+    
+  if ( firstString === secondString) {
     $( "span" ).text( "Valid Anagrams" ).show().fadeOut( 3000 );
     return;
   }
@@ -12,20 +16,3 @@ $( "form" ).submit(function( event ) {
   $( "span" ).text( "Not valid!" ).show().fadeOut( 3000 );
     
 });
-
-function getSortedString(str) {
-    
-    str = str.split('');
-
-    str.sort();
-    /**
-    str = str.sort(function (a,b) {
-        if (a === '0' || b === '0')
-            return (b === a) ?  0 : (a < b) ? 1 : -1;
-        return (a < b) ? -1 : (a === b) ? 0 : 1;
-    });**/
-
-    alert(str.join());
-    
-    return str.join();
-}
