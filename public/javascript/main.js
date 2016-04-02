@@ -2,7 +2,7 @@ $( "form" ).submit(function( event ) {
     
   event.preventDefault();
     
-  if ( $( "#first_string" ).val().equals( $( "#second_string" ).val() )) {
+  if ( $( "#first_string" ).val() === $( "#second_string" ).val() ) {
     $( "span" ).text( "Valid Anagrams" ).show().fadeOut( 3000 );
     return;
   }
