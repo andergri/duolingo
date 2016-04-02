@@ -18,7 +18,6 @@ function getSortedString(str) {
     str = str.split('');
 
     str.sort();
-    
     /**
     str = str.sort(function (a,b) {
         if (a === '0' || b === '0')
@@ -26,7 +25,7 @@ function getSortedString(str) {
         return (a < b) ? -1 : (a === b) ? 0 : 1;
     });**/
 
-    alert(Arrays.toString(str));
+    alert(String.valueOf(str));
     
-    return Arrays.toString(str);
+    return String.valueOf(str);
 }
