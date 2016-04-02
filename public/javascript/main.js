@@ -9,4 +9,7 @@ $( "form" ).submit(function( event ) {
  
   $( "span" ).text( "Not valid!" ).show().fadeOut( 3000 );
   event.preventDefault();
+    
+ alert("222");
+    
 });
