@@ -8,9 +8,9 @@ $( "form" ).submit(function( event ) {
   //firstString = firstString.split("").sort().join("");
   secondString = secondString.split("").sort().join("");      
     
-  alert("a "+ firstString.val().split(""));
-    alert("b "+ firstString.val().split("").sort());
-    alert("c "+ firstString.val().split("").sort().join(""));
+  alert("a "+ firstString.split(""));
+    alert("b "+ firstString.split("").sort());
+    alert("c "+ firstString.split("").sort().join(""));
   alert(secondString);    
     
   if ( firstString === secondString) {
