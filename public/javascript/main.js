@@ -5,9 +5,9 @@ $( "form" ).submit(function( event ) {
   var firstString = $( "#first_string" ).val().split(",").sort().join(",");
   var secondString = $( "#second_string" ).val().split(",").sort().join(",");      
     
-  alert($( "#first_string" ).val().split(","));
-    alert($( "#first_string" ).val().split(",").sort());
-    alert($( "#first_string" ).val().split(",").sort().join(","));
+  alert("a"+ $( "#first_string" ).val().split(","));
+    alert("b"+ $( "#first_string" ).val().split(",").sort());
+    alert("c"+ $( "#first_string" ).val().split(",").sort().join(","));
   alert(secondString);    
     
   if ( firstString === secondString) {
