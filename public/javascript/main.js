@@ -25,7 +25,7 @@ function getSortedString(str) {
         return (a < b) ? -1 : (a === b) ? 0 : 1;
     });**/
 
-    alert(String.valueOf(str));
+    alert(str.join());
     
-    return String.valueOf(str);
+    return str.join();
 }
