@@ -1,6 +1,6 @@
 $( "form" ).submit(function( event ) {
     
-    alert("111");
+  event.preventDefault();
     
   if ( $( "input:first" ).val().equals( $( "input:second" ).val() )) {
     $( "span" ).text( "Valid Anagrams" ).show().fadeOut( 3000 );
@@ -8,7 +8,7 @@ $( "form" ).submit(function( event ) {
   }
  
   $( "span" ).text( "Not valid!" ).show().fadeOut( 3000 );
-  event.preventDefault();
+
     
  alert("222");
     
